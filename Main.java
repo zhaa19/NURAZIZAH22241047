@@ -1,74 +1,40 @@
-package com.tutorial;
+Package com.tutorial;
 
-class Mahasiswa {
+class User{
+    private String  username;
+    private String password;
 
-// Data Member
-String nama;
-String nim;
-String prodi;
+    User(String username, String password){
+        this.username = username;
+        this.username = password;
 
-//konstruktor
-Mahasiswa( String nama, String nim, String prodi){
-    this.nama = nama;
-    this.nim = nim;
-    this.prodi = prodi;
-}
-
-// method tanpa return dan tanpa parameter
-void show(){
-    System.out.println("Nama : " + this.nama);
-    System.out.println("NIM : " + this.nim);
-    System.out.println("Prodi : " + this.prodi);
-
-
-}
-
-// method tanpa dengan parameter
-void setNama (String nama, String nim, String prodi) {
-    this.nama = nama;
-    this.nim = nim;
-    this.prodi = prodi; 
-}
-
-
-// method tanpa parameter dengan return
-String getNama(){
-    return this.nama;
-
-}                                          
- String getNIM(){
-    return this.nim;
- }
-
- // method dengan parameter dengan return
- String sayHi(String pesan) {
-    return pesan + " aku " + this.nama + " Mahasiswa PTI ";
- }
-
-
-
-
-
-
-}
-public class Main {
-
-
-    public static void main(String[] args) {
-        
-        // membuat objek baru atau instansiasi
-        Mahasiswa mhs1 = new Mahasiswa ("Azizah","12345678", "PTI");
-        
-        // memanggil method
-        mhs1.show();
-        mhs1.setNama("indraa", "22241047", "b inggris");
-        mhs1.show();
-
-        System.out.println(mhs1.getNama());
-        System.out.println(mhs1.getNIM());
-
-        String pesan = mhs1.sayHi("haii");
-        System.out.println(pesan);
     }
 
-} 
+    // method getter
+    public String getUsername(){
+        return this.username;
+    }
+
+    // method Setter untuk ganti password
+    public void getPassword(){
+        this.Password = password;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // instansiasi atau buat objek
+        User person_1 = new User("undikma","jayajayajaya");
+
+        // get username
+        Systerm.out.println(person_1.getUsername());
+        System.out.println(person_1.getUsrename());
+
+        person_1.Setpassword("sukses");
+
+        System.out.printrln("Password Baru : " + person_1.getpassword());
+         
+
+         
+    }
+}
